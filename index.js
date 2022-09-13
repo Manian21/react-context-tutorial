@@ -1,13 +1,15 @@
 import React, { Component } from 'react';
 import { render } from 'react-dom';
 import './style.css';
-import { TshirtList } from './TshirtList';
-import { Cart } from './Cart';
 import { CartProvider } from './CartContext';
-import { TestOne } from './TestOne';
+import { Cart } from './Cart';
 
 const App = () => {
-  return <TestOne />;
+  return (
+    <CartProvider>
+      <Child />
+    </CartProvider>
+  );
 };
 
 render(<App />, document.getElementById('root'));
