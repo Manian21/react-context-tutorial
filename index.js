@@ -7,7 +7,7 @@ import { Cart } from './Cart';
 const App = () => {
   return (
     <CartProvider>
-      <Child />
+      <Cart />
     </CartProvider>
   );
 };
